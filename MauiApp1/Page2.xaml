@@ -37,5 +37,11 @@
     
         />
 
+        <Button
+            x:Name="BotonPage2"
+            Text="Ir a Pagina 3"
+            Clicked="BotonPage2_Clicked"
+            HorizontalOptions="Fill"/>
+
     </VerticalStackLayout>
 </ContentPage>
