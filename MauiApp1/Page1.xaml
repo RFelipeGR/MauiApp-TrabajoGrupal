@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.NewPage1"
              Title="NewPage1">
-    
+
 
     <Grid>
         <!-- Definimos 2 filas y 2 columnas -->
@@ -28,5 +28,14 @@
 
         <!-- Cuadro 4 (Fila 1, Columna 1) - Color Amarillo -->
         <BoxView Grid.Row="1" Grid.Column="1" Color="Yellow" />
+
+        <Button
+            Grid.Row="1" Grid.Column="1"
+            x:Name="BotonPage1"
+            Text="Ir a Pagina 2"
+            Clicked="BotonPage1_Clicked"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
+
     </Grid>
 </ContentPage>
