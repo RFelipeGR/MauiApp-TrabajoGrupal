@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage1"
+             Title="NewPage1">
+    
+
+    <Grid>
+        <!-- Definimos 2 filas y 2 columnas -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Cuadro 1 (Fila 0, Columna 0) - Color Rojo -->
+        <BoxView Grid.Row="0" Grid.Column="0" Color="Red" />
+
+        <!-- Cuadro 2 (Fila 0, Columna 1) - Color Azul -->
+        <BoxView Grid.Row="0" Grid.Column="1" Color="Blue" />
+
+        <!-- Cuadro 3 (Fila 1, Columna 0) - Color Verde -->
+        <BoxView Grid.Row="1" Grid.Column="0" Color="Green" />
+
+        <!-- Cuadro 4 (Fila 1, Columna 1) - Color Amarillo -->
+        <BoxView Grid.Row="1" Grid.Column="1" Color="Yellow" />
+    </Grid>
+</ContentPage>
