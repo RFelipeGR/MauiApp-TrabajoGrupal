@@ -18,7 +18,13 @@
                 </Image>
 
                 <!-- Texto al lado de la imagen -->
-                <Label Text="PAUL POOL LARREA"
+                <Label Text="¡SE BUSCA!&#x0a;
+Nombre: Paul Larrea &#x0a;
+Descripción: Este sujeto fue quien provocó los incendios en Quito el pasado mes de Octubre. Conocido como alias (POOL)&#x0a;
+Por favor difundan &#x0a;
+Recompensa: $100.000"
+                   Padding="20,0,0,0"
+                   WidthRequest="400"
                    FontSize="25"
                    FontFamily="Times New Roman"
                    FontAttributes="Italic"
@@ -36,11 +42,12 @@
 
                 <!-- Texto al lado de la imagen  -  LineBreakMode="WordWrap" -->
                 <Label Text="El Fútbol Club Barcelona, conocido popularmente como Barça,​ es una entidad polideportiva con sede en Barcelona. Fue fundado como club de fútbol el 29 de noviembre de 1899 y registrado oficialmente el 5 de enero de 1903"
+                   Padding="20,0,0,0"
                    FontSize="25"    
                    WidthRequest="400"
                    FontFamily="Times New Roman"
                    FontAttributes="Italic"
-                   TextColor="Green" />
+                   TextColor="SlateGrey" />
             </FlexLayout>
 
 
@@ -55,10 +62,11 @@
 
                 <!-- Texto al lado de la imagen -->
                 <Label Text="MEME OK"
+                       Padding="20,0,0,0"
                        FontSize="25"
                        FontFamily="Times New Roman"
                        FontAttributes="Italic"
-                       TextColor="Green" />
+                       TextColor="Black" />
             </FlexLayout>
 
         </StackLayout>
