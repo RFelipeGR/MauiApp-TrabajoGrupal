@@ -3,21 +3,65 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.Page3"
              Title="PAGINA 3">
-    
-    
-    <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="Start">
-        <!-- Imagen con gesto de toque para navegar -->
-        <Image Source="paulpool.jpeg" WidthRequest="400" HeightRequest="400">
-            <Image.GestureRecognizers>
-                <TapGestureRecognizer Tapped="OnImageTapped"/>
-            </Image.GestureRecognizers>
-        </Image>
 
-        <!-- Texto al lado de la imagen -->
-        <Label Text="Texto al lado de la imagen"
-               VerticalOptions="Center"
-               HorizontalOptions="StartAndExpand"
-               FontSize="20" />
-        
-   </FlexLayout>
+
+    <ScrollView>
+        <StackLayout>
+
+            <!-- Primer FlexLayout para la imagen y el texto -->
+            <FlexLayout Direction="Row" AlignItems="Start" JustifyContent="Start">
+                <!-- Imagen con gesto de toque para navegar -->
+                <Image Source="paulpool.jpeg" WidthRequest="250" HeightRequest="250">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <!-- Texto al lado de la imagen -->
+                <Label Text="PAUL POOL LARREA"
+                   FontSize="25"
+                   FontFamily="Times New Roman"
+                   FontAttributes="Italic"
+                   TextColor="Green" />
+            </FlexLayout>
+
+            <!-- Segundo FlexLayout para la imagen y el texto -->
+            <FlexLayout Direction="Row" AlignItems="Start" JustifyContent="Start">
+                <!-- Imagen con gesto de toque para navegar -->
+                <Image Source="barca.png" WidthRequest="250" HeightRequest="250">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <!-- Texto al lado de la imagen  -  LineBreakMode="WordWrap" -->
+                <Label Text="El Fútbol Club Barcelona, conocido popularmente como Barça,​ es una entidad polideportiva con sede en Barcelona. Fue fundado como club de fútbol el 29 de noviembre de 1899 y registrado oficialmente el 5 de enero de 1903"
+                   FontSize="25"    
+                   WidthRequest="400"
+                   FontFamily="Times New Roman"
+                   FontAttributes="Italic"
+                   TextColor="Green" />
+            </FlexLayout>
+
+
+            <!-- tercer FlexLayout para la imagen y el texto -->
+            <FlexLayout Direction="Row" AlignItems="Start" JustifyContent="Start">
+                <!-- Imagen con gesto de toque para navegar -->
+                <Image Source="ok.jpg" WidthRequest="250" HeightRequest="250">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <!-- Texto al lado de la imagen -->
+                <Label Text="MEME OK"
+                       FontSize="25"
+                       FontFamily="Times New Roman"
+                       FontAttributes="Italic"
+                       TextColor="Green" />
+            </FlexLayout>
+
+        </StackLayout>
+
+    </ScrollView>
 </ContentPage>
