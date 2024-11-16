@@ -5,7 +5,7 @@
              Title="NewPage1">
     <VerticalStackLayout>
         <Label 
-            Text="Roberto "
+            Text="Roberto Felipe Guaña Romero"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             FontSize="32"
@@ -13,7 +13,29 @@
             FontAttributes="Bold"
             TextColor="Blue" 
             
-            Style="{StaticResource TitleLabelStyle}" />
+        />
+        
+        <Label 
+            Text="USO DE LAYOUTS"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="15"
+            FontFamily="Times New Roman"
+            FontAttributes="None"
+            TextColor="Green" 
+    
+        />
+        
+        <Label 
+            Text="Programación IV"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="90"
+            FontFamily="Verdana"
+            FontAttributes="Italic"
+            TextColor="Red" 
+    
+        />
 
     </VerticalStackLayout>
 </ContentPage>
