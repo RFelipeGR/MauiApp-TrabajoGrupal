@@ -11,24 +11,64 @@
         <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
             <!-- El contenido que hará scroll -->
             <StackLayout>
-                    <Label Text="AbsoluteLayout" />
+                    <Label Text="AbsoluteLayout" 
+                           FontSize="40"
+                            FontFamily="Times New Roman"
+                            FontAttributes="Bold"
+                            TextColor="Black"/>
+                           
                     <Label Text=".NET Multi-platform App UI (.NET MAUI) AbsoluteLayout se usa para colocar y ajustar el tamaño de los elementos secundarios mediante valores explícitos. La posición se especifica en la esquina superior izquierda del elemento secundario en relación con la esquina superior izquierda de AbsoluteLayout en unidades independientes del dispositivo. AbsoluteLayout también implementa una característica de posicionamiento y ajuste de tamaño proporcional. Además, a diferencia de otras clases de diseño, AbsoluteLayout puede colocar elementos secundarios para que se superpongan.&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;" 
-                   WidthRequest="400"/>
-                    <Label Text="AbsoluteLayout debe considerarse como un sistema de diseño de ámbito especial que solo se usará cuando el programador pueda aplicar un tamaño en los elementos secundarios o cuando el tamaño del elemento no afecte a la posición de otros elementos secundarios." 
-                   WidthRequest="400"/>
-                    <Label Text="La clase AbsoluteLayout define las propiedades siguientes:" />
-                    <Label Text="LayoutBounds, de tipo Rect, que es una propiedad adjunta que representa la posición y el tamaño de un elemento secundario. El valor predeterminado de esta propiedad es (0,0,AutoSize,AutoSize).&#x0a;
-LayoutFlags, de tipo AbsoluteLayoutFlags, que es una propiedad adjunta que indica si las propiedades de los límites de diseño usados para colocar y ajustar el tamaño del elemento secundario se interpretan proporcionalmente. El valor predeterminado de esta propiedad es AbsoluteLayoutFlags.None." 
-                   WidthRequest="400"/>
-                    <Label Text="Todas estas propiedades están respaldados por objetos BindableProperty, lo que significa que las propiedades pueden ser destinos de los enlaces de datos, y se les puede aplicar estilos. Para más información sobre las propiedades adjuntas, consulta Propiedades adjuntas de .NET MAUI." 
-                   WidthRequest="400"/>
-                    <Label Text="La clase AbsoluteLayout define las propiedades siguientes:&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;" />
-                    <Label Text="La clase AbsoluteLayout define las propiedades siguientes:" />
-                    <!-- Agrega más contenido si es necesario para hacer scroll -->
+                   WidthRequest="400"
+                             FontSize="25"
+                             FontFamily="Times New Roman"
+                             FontAttributes="None"
+                             TextColor="Black"/>
+                <Label Text="AbsoluteLayout debe considerarse como un sistema de diseño de ámbito especial que solo se usará cuando el programador pueda aplicar un tamaño en los elementos secundarios o cuando el tamaño del elemento no afecte a la posición de otros elementos secundarios.&#x0a;&#x0a;" 
+                   WidthRequest="400"
+                           FontSize="25"
+                            FontFamily="Times New Roman"
+                            FontAttributes="None"
+                            TextColor="Black"/>
+                <Label Text="La clase AbsoluteLayout define las propiedades siguientes:&#x0a;" 
+                           FontSize="25"
+                            FontFamily="Times New Roman"
+                            FontAttributes="None"
+                            TextColor="Black"/>
+                <Label Text="LayoutBounds, de tipo Rect, que es una propiedad adjunta que representa la posición y el tamaño de un elemento secundario. El valor predeterminado de esta propiedad es (0,0,AutoSize,AutoSize).&#x0a;&#x0a;
+&#x0a;LayoutFlags, de tipo AbsoluteLayoutFlags, que es una propiedad adjunta que indica si las propiedades de los límites de diseño usados para colocar y ajustar el tamaño del elemento secundario se interpretan proporcionalmente. El valor predeterminado de esta propiedad es AbsoluteLayoutFlags.None." 
+                   WidthRequest="400"
+                           FontSize="25"
+                            FontFamily="Times New Roman"
+                            FontAttributes="None"
+                            TextColor="Black"/>
+                <Label Text="Todas estas propiedades están respaldados por objetos BindableProperty, lo que significa que las propiedades pueden ser destinos de los enlaces de datos, y se les puede aplicar estilos. Para más información sobre las propiedades adjuntas, consulta Propiedades adjuntas de .NET MAUI.&#x0a;&#x0a;" 
+                   WidthRequest="400"
+                           FontSize="25"
+                            FontFamily="Times New Roman"
+                            FontAttributes="None"
+                            TextColor="Black"/>
+                <Label Text="&#x0a;La clase AbsoluteLayout define las propiedades siguientes:&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;" 
+                           WidthRequest="400"
+        FontSize="25"
+         FontFamily="Times New Roman"
+         FontAttributes="None"
+         TextColor="Black"/>
+                <Label Text="&#x0a;La clase AbsoluteLayout define las propiedades siguientes:" 
+                           WidthRequest="400"
+        FontSize="25"
+         FontFamily="Times New Roman"
+         FontAttributes="None"
+         TextColor="Black"/>
+                    
             </StackLayout>
         </ScrollView>
 
-        
+       
+        <Button 
+            Text="Ir a Pagina 1"
+            Clicked="BotonPage4_Clicked"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize" />
 
     </AbsoluteLayout>
 </ContentPage>
